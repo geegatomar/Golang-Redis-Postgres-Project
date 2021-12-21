@@ -27,7 +27,7 @@ The app listens on port **8081**.
 
 I started the project with the 3 basic files- main.go, go.mod and go.sum. I'm making use of gorilla mux for the multiplexer, and the code for the handler functions can be found in the controllers package. <br>
 I started out with first writing the golang app with data being persisted only in the postgres db, and then eventually added redis as the cache layer. So for requests such as getTodo() which would earlier directly contact the postgresdb would now first check for the entry in the redis cache. We store and set elements in the cache when the user first creates a new todo, and then if they update a todo task, and also when user makes a get request and if it wasn't found in the cache. <br>
-The basic layout of the 3 main components in the projecr are as follows: 
+The basic layout of the 3 main components in the project are as follows: 
 <br>
 ![architecture](https://github.com/geegatomar/Golang-Redis-Postgres-Project/blob/master/images/architecture.png?raw=true)
 
