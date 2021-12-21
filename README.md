@@ -39,7 +39,7 @@ The **postman api collection** for the five major APIs can be found here: https:
 #### Simple Testing
 Since the problem statement asks us to write only very basic tests, to test the apis along with the database connections, for the sake of simplicity I have not written tests testing each layer individually and making a mock db, etc. <br>
 Instead, we are testing each of the routes end-to-end here in the file *main_test.go*, and hence the server must be up and running when you execute these test commands. <br>
-I have included a setup and teardown function for some of the tests which require some data to be already present in the db.
+I have included a setup and teardown function for some of the tests which require some data to be already present in the db. <br>
 Command to test:  `go test -v`  <br>
 ![testing](https://github.com/geegatomar/Golang-Redis-Postgres-Project/blob/master/images/testing.png?raw=true)
 
