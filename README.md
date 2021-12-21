@@ -18,7 +18,8 @@ README to run this setup locally
 1. Clone the repo
 2. Run the command **`docker-compose up`** in the folder having the docker-compose.yaml file
 
-The app listens on port *8081*.
+(If you see the following *Postgres DB init automigration completed* and *Redis cache init was completed*, then you are good to go.) <br>
+The app listens on port **8081**.
 <br>
 
 
