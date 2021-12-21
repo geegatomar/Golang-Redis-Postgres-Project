@@ -32,7 +32,7 @@ The basic layout of the 3 main components in the projecr are as follows:
 ![architecture](https://github.com/geegatomar/Golang-Redis-Postgres-Project/blob/master/images/architecture.png?raw=true)
 
 I then dockerized the application, and wrote the Dockerfile and docker-compose.yaml files respectively. <br>
-The **postman collection** for the five major APIs can be found here: https://www.postman.com/collections/b38404c7f31cdd89d33b
+The **postman api collection** for the five major APIs can be found here: https://www.postman.com/collections/b38404c7f31cdd89d33b
 
 
 
