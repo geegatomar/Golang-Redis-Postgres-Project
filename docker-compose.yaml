@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  golang-todo-app:
+    image: golang-todo-app
+    build: .
+    ports:
+      - 8081:8081
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=shivangi
+      - POSTGRES_DB=postgres
+      - POSTGRES_HOST=postgres-todo-app
+      - POSTGRES_PORT=5432
+      - REDIS_PASSWORD=
+      - REDIS_HOST=redis-todo-app
+      - REDIS_PORT=6379
+    depends_on:
+      - postgres-todo-app
+      - redis-todo-app
+
+  postgres-todo-app:
+    image: postgres
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=shivangi
+
+  redis-todo-app:
+    image: redis
